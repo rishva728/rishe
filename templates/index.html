@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduGenie - AI Learning Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎓 EduGenie</h1>
+        <h3>Google Gemini Powered Learning Assistant</h3>
+
+        <textarea id="question" placeholder="Ask your question here..."></textarea>
+
+        <button onclick="askAI()">Ask EduGenie</button>
+
+        <div id="answer">
+            AI answer will appear here...
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
